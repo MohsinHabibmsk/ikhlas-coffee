@@ -41,7 +41,7 @@
       color: var(--gold);
     }
     .logo img {
-      height: 50px;
+      height: 55px;
     }
     nav a {
       color: white;
@@ -55,7 +55,7 @@
     /* Hero */
     .hero {
       height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('https://source.unsplash.com/random/1920x1080/?ethiopian-coffee-farm') center/cover no-repeat;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('https://source.unsplash.com/random/1920x1080/?ethiopian-coffee-plantation') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -67,11 +67,11 @@
       padding: 2rem;
     }
     .hero-content img {
-      height: 120px;
+      height: 130px;
       margin-bottom: 1.5rem;
     }
     .hero h1 {
-      font-size: 4.2rem;
+      font-size: 4.5rem;
       margin-bottom: 1rem;
       color: var(--gold);
     }
@@ -129,7 +129,7 @@
       height: 380px;
       object-fit: contain;
       background: #f8f4eb;
-      padding: 20px;
+      padding: 25px;
     }
     .product-info {
       padding: 1.8rem;
@@ -146,19 +146,13 @@
       margin: 1rem 0;
     }
 
-    /* Footer */
-    footer {
-      background: #111;
-      padding: 80px 5% 40px;
+    /* About */
+    .about {
+      padding: 100px 5%;
+      background: #0a3d2e;
+      color: white;
       text-align: center;
     }
-    .social-icons a {
-      color: var(--gold);
-      font-size: 1.9rem;
-      margin: 0 18px;
-      transition: color 0.3s;
-    }
-    .social-icons a:hover { color: white; }
   </style>
 </head>
 <body>
@@ -181,20 +175,19 @@
   <section id="home" class="hero">
     <div class="hero-content">
       <img src="https://grok.x.ai/generated/kNA8r" alt="IKHLAS COFFEE Logo">
-      <h1>Premium Ethiopian Coffee</h1>
-      <p>100% Arabica • Freshly Roasted • Bold Flavor & Rich Aroma</p>
-      <a href="#products" class="btn">Shop Now</a>
+      <h1>IKHLAS COFFEE</h1>
+      <p>Premium Roasted Ethiopian Arabica • Rich Flavor • Bold Aroma</p>
+      <a href="#products" class="btn">Shop Our Roasted Coffees</a>
     </div>
   </section>
 
-  <!-- Products Section -->
+  <!-- Products -->
   <section id="products" class="products">
     <h2 class="section-title">Our Roasted Coffee Packs</h2>
     <div class="product-grid">
 
-      <!-- Product 1 -->
       <div class="product-card">
-        <img src="ikl.jpg" alt="IKHLAS Ethiopia Coffee Pack">
+        <img src="https://grok.x.ai/generated/0IEgm" alt="IKHLAS Single Origin Coffee">
         <div class="product-info">
           <h3>Ethiopian Single Origin</h3>
           <p>250g • Floral, Citrus & Chocolate Notes</p>
@@ -203,20 +196,18 @@
         </div>
       </div>
 
-      <!-- Product 2 -->
       <div class="product-card">
-        <img src="https://grok.x.ai/generated/Z9nwY" alt="IKHLAS Bold Roast">
+        <img src="https://grok.x.ai/generated/0dJdi" alt="IKHLAS Bold Roast">
         <div class="product-info">
           <h3>Signature Bold Roast</h3>
-          <p>250g • Dark Chocolate & Spice</p>
+          <p>250g • Dark Chocolate & Warm Spice</p>
           <div class="price">$20.00</div>
           <a href="#" class="btn">Add to Cart</a>
         </div>
       </div>
 
-      <!-- Product 3 -->
       <div class="product-card">
-        <img src="https://grok.x.ai/generated/Z9nwY" alt="IKHLAS Gift Pack">
+        <img src="https://grok.x.ai/generated/uHwjj" alt="IKHLAS Coffee Pack Lifestyle">
         <div class="product-info">
           <h3>Discovery Gift Set</h3>
           <p>3 × 250g Premium Blends</p>
@@ -229,10 +220,10 @@
   </section>
 
   <!-- About -->
-  <section id="about" style="padding: 100px 5%; background: #0a3d2e; color: white; text-align: center;">
+  <section id="about" class="about">
     <h2 style="font-size: 3rem; color: #d4af37; margin-bottom: 2rem;">From Ethiopian Highlands to Your Cup</h2>
     <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.25rem;">
-      IKHLAS COFFEE brings you the finest single-origin Ethiopian Arabica beans, carefully selected and freshly roasted in small batches.
+      We proudly bring you the finest single-origin Ethiopian Arabica beans, carefully selected and freshly roasted in small batches.
     </p>
     <p style="max-width: 800px; margin: 0 auto; font-size: 1.25rem;">
       100% traceable • Sustainably grown • Proudly Ethiopian.
@@ -240,21 +231,19 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div style="max-width: 1000px; margin: 0 auto;">
-      <div class="logo" style="justify-content:center; margin-bottom: 1.5rem; color: white;">
-        <img src="https://grok.x.ai/generated/kNA8r" alt="Logo" style="height: 60px;">
+  <footer style="background:#111; padding:80px 5% 40px; text-align:center;">
+    <div style="max-width:1000px; margin:0 auto;">
+      <div class="logo" style="justify-content:center; margin-bottom:1.5rem; color:white;">
+        <img src="https://grok.x.ai/generated/kNA8r" alt="Logo" style="height:60px;">
         IKHLAS COFFEE
       </div>
       <p>Addis Ababa, Ethiopia</p>
-      <div class="social-icons" style="margin: 2rem 0;">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <div style="margin:2rem 0;">
+        <a href="#" style="color:var(--gold); font-size:1.8rem; margin:0 15px;"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="color:var(--gold); font-size:1.8rem; margin:0 15px;"><i class="fab fa-facebook"></i></a>
+        <a href="#" style="color:var(--gold); font-size:1.8rem; margin:0 15px;"><i class="fab fa-whatsapp"></i></a>
       </div>
-      <p style="opacity: 0.7; font-size: 0.95rem;">
-        © 2026 IKHLAS AGRO INDUSTRY PLC • Product of Ethiopia
-      </p>
+      <p style="opacity:0.7; font-size:0.95rem;">© 2026 IKHLAS AGRO INDUSTRY PLC • Product of Ethiopia</p>
     </div>
   </footer>
 
