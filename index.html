@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKHLAS COFFEE | Premium Roasted Ethiopian Arabica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --green: #0a3d2e;
+      --gold: #d4af37;
+      --cream: #f5f0e6;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f0f0f;
+      color: #eee;
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(10, 61, 46, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      padding: 1rem 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+    .logo img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: var(--gold); }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('https://source.unsplash.com/random/1920x1080/?ethiopian-coffee-farm') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero-content {
+      max-width: 900px;
+      padding: 2rem;
+    }
+    .hero-content img {
+      height: 120px;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: 4.2rem;
+      margin-bottom: 1rem;
+      color: var(--gold);
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+      opacity: 0.95;
+    }
+    .btn {
+      display: inline-block;
+      padding: 16px 45px;
+      background: var(--gold);
+      color: var(--green);
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: all 0.3s;
+      font-size: 1.1rem;
+    }
+    .btn:hover {
+      background: white;
+      transform: scale(1.08);
+    }
+
+    /* Products */
+    .products {
+      padding: 120px 5% 100px;
+      background: var(--cream);
+      color: #222;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 3.2rem;
+      margin-bottom: 4rem;
+      color: var(--green);
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2.5rem;
+    }
+    .product-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+      transition: all 0.4s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.18);
+    }
+    .product-card img {
+      width: 100%;
+      height: 380px;
+      object-fit: contain;
+      background: #f8f4eb;
+      padding: 20px;
+    }
+    .product-info {
+      padding: 1.8rem;
+      text-align: center;
+    }
+    .product-info h3 {
+      font-size: 1.7rem;
+      margin-bottom: 0.6rem;
+    }
+    .price {
+      font-size: 1.5rem;
+      color: var(--green);
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      padding: 80px 5% 40px;
+      text-align: center;
+    }
+    .social-icons a {
+      color: var(--gold);
+      font-size: 1.9rem;
+      margin: 0 18px;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover { color: white; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="https://grok.x.ai/generated/kNA8r" alt="IKHLAS COFFEE Logo">
+      IKHLAS COFFEE
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#about">Our Story</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="https://grok.x.ai/generated/kNA8r" alt="IKHLAS COFFEE Logo">
+      <h1>Premium Ethiopian Coffee</h1>
+      <p>100% Arabica • Freshly Roasted • Bold Flavor & Rich Aroma</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2 class="section-title">Our Roasted Coffee Packs</h2>
+    <div class="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://grok.x.ai/generated/Z9nwY" alt="IKHLAS Ethiopia Coffee Pack">
+        <div class="product-info">
+          <h3>Ethiopian Single Origin</h3>
+          <p>250g • Floral, Citrus & Chocolate Notes</p>
+          <div class="price">$18.00</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://grok.x.ai/generated/Z9nwY" alt="IKHLAS Bold Roast">
+        <div class="product-info">
+          <h3>Signature Bold Roast</h3>
+          <p>250g • Dark Chocolate & Spice</p>
+          <div class="price">$20.00</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://grok.x.ai/generated/Z9nwY" alt="IKHLAS Gift Pack">
+        <div class="product-info">
+          <h3>Discovery Gift Set</h3>
+          <p>3 × 250g Premium Blends</p>
+          <div class="price">$52.00</div>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" style="padding: 100px 5%; background: #0a3d2e; color: white; text-align: center;">
+    <h2 style="font-size: 3rem; color: #d4af37; margin-bottom: 2rem;">From Ethiopian Highlands to Your Cup</h2>
+    <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.25rem;">
+      IKHLAS COFFEE brings you the finest single-origin Ethiopian Arabica beans, carefully selected and freshly roasted in small batches.
+    </p>
+    <p style="max-width: 800px; margin: 0 auto; font-size: 1.25rem;">
+      100% traceable • Sustainably grown • Proudly Ethiopian.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <div class="logo" style="justify-content:center; margin-bottom: 1.5rem; color: white;">
+        <img src="https://grok.x.ai/generated/kNA8r" alt="Logo" style="height: 60px;">
+        IKHLAS COFFEE
+      </div>
+      <p>Addis Ababa, Ethiopia</p>
+      <div class="social-icons" style="margin: 2rem 0;">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <p style="opacity: 0.7; font-size: 0.95rem;">
+        © 2026 IKHLAS AGRO INDUSTRY PLC • Product of Ethiopia
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
