@@ -52,19 +52,41 @@
     }
     nav a:hover { color: var(--gold); }
 
-    /* Hero */
+    /* Hero with Background Video */
     .hero {
       height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('https://source.unsplash.com/random/1920x1080/?ethiopian-coffee-plantation') center/cover no-repeat;
+      position: relative;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       color: white;
     }
+    .hero video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -2;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.55); /* Dark overlay for readability */
+      z-index: -1;
+    }
     .hero-content {
       max-width: 900px;
       padding: 2rem;
+      z-index: 2;
+      position: relative;
     }
     .hero-content img {
       height: 130px;
@@ -96,7 +118,7 @@
       transform: scale(1.08);
     }
 
-    /* Products */
+    /* Rest of the styles remain the same */
     .products {
       padding: 120px 5% 100px;
       background: var(--cream);
@@ -146,7 +168,6 @@
       margin: 1rem 0;
     }
 
-    /* About */
     .about {
       padding: 100px 5%;
       background: #0a3d2e;
@@ -171,8 +192,14 @@
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero with Background Video -->
   <section id="home" class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="https://assets.mixkit.co/videos/preview/12345/12345-large.mp4" type="video/mp4">
+      <!-- Fallback background image if video fails to load -->
+      Your browser does not support the video tag.
+    </video>
+    
     <div class="hero-content">
       <img src="https://grok.x.ai/generated/kNA8r" alt="IKHLAS COFFEE Logo">
       <h1>IKHLAS COFFEE</h1>
@@ -181,11 +208,10 @@
     </div>
   </section>
 
-  <!-- Products -->
+  <!-- Products Section (unchanged) -->
   <section id="products" class="products">
     <h2 class="section-title">Our Roasted Coffee Packs</h2>
     <div class="product-grid">
-
       <div class="product-card">
         <img src="https://grok.x.ai/generated/0IEgm" alt="IKHLAS Single Origin Coffee">
         <div class="product-info">
@@ -215,11 +241,10 @@
           <a href="#" class="btn">Add to Cart</a>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About Section (unchanged) -->
   <section id="about" class="about">
     <h2 style="font-size: 3rem; color: #d4af37; margin-bottom: 2rem;">From Ethiopian Highlands to Your Cup</h2>
     <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.25rem;">
@@ -230,7 +255,7 @@
     </p>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer (unchanged) -->
   <footer style="background:#111; padding:80px 5% 40px; text-align:center;">
     <div style="max-width:1000px; margin:0 auto;">
       <div class="logo" style="justify-content:center; margin-bottom:1.5rem; color:white;">
